@@ -8,10 +8,43 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./icon.png" style="background-color: white;" />
 </head>
 
-<body>
-    
+<body id="home">
+    <div class="card">
+        <div class="search">
+            <input type="search" class="search-bar" placeholder="City">
+
+            <button class="search-button"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                    stroke-linecap="round" stroke-linejoin="round" height="1.5em" width="1.5em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg></button>
+
+            <!-- <button class="location"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                    height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path
+                        d="M13,4.069V2h-2v2.069C7.389,4.522,4.523,7.389,4.069,11H2v2h2.069c0.454,3.611,3.319,6.478,6.931,6.931V22h2v-2.069 c3.611-0.453,6.478-3.319,6.931-6.931H22v-2h-2.069C19.478,7.389,16.611,4.522,13,4.069z M12,18c-3.309,0-6-2.691-6-6s2.691-6,6-6 s6,2.691,6,6S15.309,18,12,18z">
+                    </path>
+                </svg></button> -->
+        </div>
+        <div class="weather loading">
+            <h2 class="city"></h2>
+            <h1 class="temp"></h1>
+            <img src="" alt="City" class="icon">
+            <div class="description"></div>
+
+        </div>
+
+    </div>
 </body>
 
 </html>
